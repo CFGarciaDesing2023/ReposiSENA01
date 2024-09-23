@@ -5,7 +5,7 @@ using System.Web;
 
 namespace APIBDPlataformaReservas.Models
 {
-    public class tipoLugar
+    public class TipoLugar
     {
         public string IdTiposAlojamientos { get; set; }
         public string NombreTiposAlojamientos { get; set; }

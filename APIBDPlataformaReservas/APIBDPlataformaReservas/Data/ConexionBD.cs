@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Net.Sockets;
 
 namespace APIBDPlataformaReservas.Data
 {
@@ -56,7 +57,8 @@ namespace APIBDPlataformaReservas.Data
         {
             try
             {
-                strCadenaCnx = "Data Source=CFGARCIADESING\\SQLEXPRESS;Initial Catalog = ApiProyecto; Integrated Security = True";
+                strCadenaCnx = "workstation id=CompletoProjectoAR.mssql.somee.com;packet size=4096;user id=cristian_SQLLogin_1;pwd=4kxhenkhij;data source=CompletoProjectoAR.mssql.somee.com;persist security info=False;initial catalog=CompletoProjectoAR;TrustServerCertificate=True";
+               //strCadenaCnx = "Data Source=CFGARCIADESING\\SQLEXPRESS;Initial Catalog = CompletoProjectoAR; Integrated Security = True";
                 objCnnBD.ConnectionString = strCadenaCnx;
                 objCnnBD.Open();
                 blnBDAbierta = true;

@@ -32,6 +32,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -110,57 +112,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AdministradorController.cs" />
-    <Compile Include="Controllers\DetallesReservaController.cs" />
-    <Compile Include="Controllers\DetallesVentaController.cs" />
-    <Compile Include="Controllers\EmpleadoController.cs" />
-    <Compile Include="Controllers\HabitacionController.cs" />
-    <Compile Include="Controllers\logginController.cs" />
-    <Compile Include="Controllers\LugarController.cs" />
-    <Compile Include="Controllers\ProductosController.cs" />
-    <Compile Include="Controllers\ReservasController.cs" />
-    <Compile Include="Controllers\ServiciosController.cs" />
-    <Compile Include="Controllers\TipoHabitacionController.cs" />
-    <Compile Include="Controllers\TipoLugarController.cs" />
-    <Compile Include="Controllers\TiposDocumentosController.cs" />
-    <Compile Include="Controllers\TipoUsuariosController.cs" />
-    <Compile Include="Controllers\VentasController.cs" />
-    <Compile Include="Data\AdministradorData.cs" />
-    <Compile Include="Data\ClienteData.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\RegistroAlojamientosController.cs" />
+    <Compile Include="Controllers\RegistroHabitacionController.cs" />
+    <Compile Include="Controllers\RegistroReservaController.cs" />
+    <Compile Include="Controllers\RegistroUsuarioController.cs" />
+    <Compile Include="Controllers\RegistroVentasController.cs" />
     <Compile Include="Data\ConexionBD.cs" />
-    <Compile Include="Data\DetallesReservasData.cs" />
-    <Compile Include="Data\DetallesVentaData.cs" />
-    <Compile Include="Data\EmpleadoData.cs" />
-    <Compile Include="Data\HabitacionData.cs" />
-    <Compile Include="Data\logginData.cs" />
-    <Compile Include="Data\LugarData.cs" />
-    <Compile Include="Data\ProductosData.cs" />
-    <Compile Include="Data\ReservasData.cs" />
-    <Compile Include="Data\ServiciosData.cs" />
-    <Compile Include="Data\TipoHabitacionesData.cs" />
-    <Compile Include="Data\TipoLugarData.cs" />
-    <Compile Include="Data\TiposDocumentosData.cs" />
-    <Compile Include="Data\TipoUsuariosData.cs" />
-    <Compile Include="Data\VentaData.cs" />
+    <Compile Include="Data\ProductoData.cs" />
+    <Compile Include="Data\RegistroHabitacionData.cs" />
+    <Compile Include="Data\RegistroUsuarioData.cs" />
+    <Compile Include="Data\RegistroAlojamientosData.cs" />
+    <Compile Include="Data\RegistroReservasData.cs" />
+    <Compile Include="Data\RegistroVentasData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Administrador.cs" />
-    <Compile Include="Models\Cliente.cs" />
-    <Compile Include="Models\DetallesReservas.cs" />
-    <Compile Include="Models\DetallesVenta.cs" />
-    <Compile Include="Models\Empleado.cs" />
-    <Compile Include="Models\habitacion.cs" />
-    <Compile Include="Models\loggin.cs" />
-    <Compile Include="Models\Lugar.cs" />
-    <Compile Include="Models\productos.cs" />
-    <Compile Include="Models\Reservas.cs" />
-    <Compile Include="Models\servicios.cs" />
-    <Compile Include="Models\tipoLugar.cs" />
-    <Compile Include="Models\TiposDocumentos.cs" />
-    <Compile Include="Models\tiposHabitacion.cs" />
-    <Compile Include="Models\TiposUsuarios.cs" />
-    <Compile Include="Models\venta.cs" />
+    <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\RegistroHabitacion.cs" />
+    <Compile Include="Models\RegistroUsuario.cs" />
+    <Compile Include="Models\RegistroAlojamientos.cs" />
+    <Compile Include="Models\RegistroReserva.cs" />
+    <Compile Include="Models\RegistroVentas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
